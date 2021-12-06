@@ -61,13 +61,13 @@ public class MenuDraw {
                             break;
                         case 3:
                             for (int i = 0; i < triNumber; i++) {
-                                for (int j = 0; j <= i; j++) {
+                                for (int j = i; j < triNumber- 1; j++) {
                                     System.out.print(" ");
                                 }
-                                for (int j = i; j < triNumber - i; j++) {
-                                    System.out.print("*");
+                                for (int j = triNumber / 2 - i; j < triNumber / 2 + 1; j++) {
+                                    System.out.print("* ");
                                 }
-                                System.out.println("");
+                                System.out.println();
                             }
                             break;
                     }
